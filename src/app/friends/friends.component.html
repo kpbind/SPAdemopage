@@ -1,0 +1,15 @@
+<p>Click the button to View My Friends Details</p><hr/>
+<button (click)="getUserDetails()"> View Friends </button>
+<table style="background-color:beige">
+      <!-- <th>Id </th>
+      <th>Name </th>
+      <th>Email </th>
+      <th>Phone </th> -->
+      <br/>
+    <tr  *ngFor="let u of userInfoData">
+        <td style="width: 10%;">{{ u.id }}</td>
+        <td style="width: 30%;">{{ u.name }}</td>
+        <td style="width: 30%;">{{ u.email }}</td>
+        <td style="width: 30%;">{{ u.phone}}</td>
+    </tr>
+</table>
